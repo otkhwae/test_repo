@@ -1,9 +1,9 @@
-pipeline {
+hipipeline {
     agent any
     stages{
-        stage("first stage"){
+        stage("git checkout"){
             steps{
-                git credentialsId: 'github', url: 'https://github.com/otkhwae/test_repo'
+                echo 'hi from git checkout'
             }
         }
     }
